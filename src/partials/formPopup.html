@@ -1,0 +1,34 @@
+<form action="#" id="contactForm" class="modal formPopup grid gap-[16px]">
+    <button class="absolute close-modal w-[25px] h-[25px] top-[12px] right-[12px]"><img src="/assets/images/closeBlack.svg" alt=""></button>
+
+    <h2 class=" text-center">Оставить заявку</h2>
+    <input type="text" placeholder="Ваше имя*"
+           class="border-bottom border-gray-300 h-[44px]  py-2 pr-4 w-full focus:outline-none focus:border-blue-400 focus:ring-blue-500">
+    <input type="text" placeholder="Телефон*"
+           class="border-bottom border-gray-300 h-[44px]  py-2 pr-4 w-full focus:outline-none focus:border-blue-400 focus:ring-blue-500">
+    <input type="email" placeholder="E-mail"
+           class="border-bottom border-gray-300 h-[44px]  py-2 pr-4 w-full focus:outline-none focus:border-blue-400 focus:ring-blue-500">
+    <textarea placeholder="Сообщение"
+              class="border-bottom border-gray-300  py-2 pr-4 w-full h-[50px] focus:outline-none focus:border-blue-400 focus:ring-blue-500 "></textarea>
+
+    <div class="checkbox relative my-[8px]">
+        <input type="checkbox" id="accept" class="absolute opacity-0">
+        <label for="accept" class="flex align-center gap-2 cursor-pointer text-[13px]">
+            <span class="w-[20px] h-[20px]   rounded-sm relative flex-shrink-0"></span>
+            <div>
+                <a href="#" class="text-link inline">Принимаю условия</a> обработки и хранения персональных данных
+            </div>
+        </label>
+    </div>
+
+    <button  class="btn-blue submitFormPopup  w-full">
+        Отправить
+    </button>
+</form>
+
+<div class="modal modalThanks flex flex-col w-[480px] items-center">
+    <button class="absolute close-modal w-[25px] h-[25px] top-[12px] right-[12px]"><img src="/assets/images/closeBlack.svg" alt=""></button>
+    <h2 class="mb-[16px]">Заявка отправлена!</h2>
+    <div>Мы свяжемся с вами в&nbsp;ближайшее&nbsp;время</div>
+    <button class="btn-blue w-[120px] mt-[24px] close-modal">Ок</button>
+</div>

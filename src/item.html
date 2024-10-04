@@ -1,0 +1,339 @@
+---
+layout: default
+title: Каталог
+---
+
+<div class="container">
+    <div class="breadcrumbs">
+        <div><a href="/">Главная</a></div>
+        <div><a href="/catalog.html">Каталог</a></div>
+        <div><a href="/catalogZoom.html">Рубка листового металла</a></div>
+        <div><a href="#">Вертикальные фрезерные станки с ЧПУ серии DGM</a></div>
+    </div>
+</div>
+
+<div class="catalogMain">
+    <div class="container">
+        <div class="lg:hidden mb-[24px]">
+            <h1 class="mb-2">Вертикальные фрезерные станки с ЧПУ серии DGM</h1>
+            <div class="subtitle">Арт. 125698</div>
+        </div>
+
+        <div class="sm:grid lg:grid-cols-[480px_1fr] lg:gap-[64px]">
+            <div class="sm:w-[480px] w-full">
+                <div class="swiper main-slider sm:h-[380px]  border-a">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide flex items-center justify-center"><img
+                                src="/assets/images/catalog/catalogM1.png" alt="Image 1"></div>
+                        <div class="swiper-slide flex items-center justify-center"><img
+                                src="/assets/images/catalog/catalogM2.png" alt="Image 2"></div>
+                        <div class="swiper-slide flex items-center justify-center"><img
+                                src="/assets/images/catalog/catalogM3.png" alt="Image 3"></div>
+                        <div class="swiper-slide flex items-center justify-center"><img
+                                src="/assets/images/catalog/catalogM4.png" alt="Image 4"></div>
+                        <div class="swiper-slide flex items-center justify-center"><img
+                                src="/assets/images/catalog/img1.png" alt="Image 4"></div>
+                        <div class="swiper-slide flex items-center justify-center"><img
+                                src="/assets/images/catalog/img2.png" alt="Image 4"></div>
+                    </div>
+                </div>
+
+
+                <!-- Thumbs Slider -->
+                <div class="thumbs-slider-wrp">
+                    <div class="swiper thumbs-slider ">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="/assets/images/catalog/catalogM1.png" alt="Image 1">
+                            </div>
+                            <div class="swiper-slide"><img src="/assets/images/catalog/catalogM2.png" alt="Image 2">
+                            </div>
+                            <div class="swiper-slide"><img src="/assets/images/catalog/catalogM3.png" alt="Image 3">
+                            </div>
+                            <div class="swiper-slide"><img src="/assets/images/catalog/catalogM4.png" alt="Image 4">
+                            </div>
+                            <div class="swiper-slide"><img src="/assets/images/catalog/img1.png" alt="Image 4"></div>
+                            <div class="swiper-slide"><img src="/assets/images/catalog/img2.png" alt="Image 4"></div>
+                        </div>
+
+
+                    </div>
+                    <div class=" thumbs-prev lg:flex hidden">
+                        <img src="/assets/images/swiperArrow.svg" alt="">
+                    </div>
+                    <div class="thumbs-next lg:flex hidden">
+                        <img src="/assets/images/swiperArrow.svg" alt="">
+                    </div>
+                </div>
+
+            </div>
+            <div>
+                <div class="lg:block hidden">
+                    <h1 class="mb-2">Вертикальные фрезерные станки с ЧПУ серии DGM</h1>
+                    <div class="subtitle">Арт. 125698</div>
+                </div>
+                <div class="mt-[24px]">Вертикальные обрабатывающие станки серии DGM имеют компоновку с&nbsp;неподвижным
+                    столом и подвижной
+                    траверсой, перемещающейся по вертикальным боковым элементам портала, что позволяет исключить влияние
+                    веса обрабатываемой детали на подвижные органы, обеспечивая высокую точность при любых&nbsp;режимах
+                    обработки.
+                </div>
+                <div class="flex sm:flex-row flex-col lg:gap-[16px] gap-[12px] mt-[24px]">
+                    <a href="#" class="btn-blue sm:w-fit w-full">Запросить ТПК</a>
+                    <a href="#" class="btn-blue-outline sm:w-fit w-full">Задать вопрос</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+      const mainSwiper = new Swiper('.main-slider', {
+        spaceBetween: 10,
+        thumbs: {
+          swiper: {
+            el: '.thumbs-slider',
+            slidesPerView: 4,
+            watchSlidesVisibility: true,
+            watchSlidesProgress: true,
+          },
+        },
+      });
+
+      const thumbsSwiper = new Swiper('.thumbs-slider', {
+        spaceBetween: 10,
+        slidesPerView: 4,
+        navigation: {
+          nextEl: '.thumbs-next',
+          prevEl: '.thumbs-prev',
+        },
+        slideToClickedSlide: true,
+      });
+    </script>
+
+
+    <div class="container lg:mt-[65px] sm:mt-[40px] mt-[24px]">
+        <div class="tabs">
+            <div class="tabs-item active" data-key="tab1">Технические характеристики</div>
+            <div class="tabs-item" data-key="tab2">Конструктивные особенности</div>
+            <div class="tabs-item" data-key="tab3">Комплектация и опции</div>
+        </div>
+
+        <div class="tab-box active" id="tab1">
+            <h3>Технические характеристики</h3>
+
+            <div class="table">
+                <div class="table-head">
+                    <div>Модель</div>
+                    <div>DGM-1400A</div>
+                    <div>DGM-1400A+C</div>
+                    <div>DGM-1400S</div>
+                    <div>DGM-1400T</div>
+                </div>
+                <div class="table-item">
+                    <div>Максимальная величина перемещения по оси X, мм</div>
+                    <div>700x450</div>
+                    <div>Ф550</div>
+                    <div>1200x1200</div>
+                    <div>1500x1500</div>
+                </div>
+                <div class="table-item">
+                    <div>Максимальная величина перемещения по оси Z, мм</div>
+                    <div>700</div>
+                    <div>700</div>
+                    <div>700</div>
+                    <div>700</div>
+                </div>
+                <div class="table-item">
+                    <div>Максимальная величина перемещения по оси Y, мм</div>
+                    <div>1400</div>
+                    <div>1400</div>
+                    <div>1400</div>
+                    <div>1400</div>
+                </div>
+                <div class="table-item">
+                    <div>Расстояние от торца шпинделя до поверхности стола, мм</div>
+                    <div>420–1120</div>
+                    <div>420–1120</div>
+                    <div>420–1120</div>
+                    <div>420–1120</div>
+                </div>
+                <div class="table-item">
+                    <div>Расстояние между боковыми элементами портала, мм</div>
+                    <div>2100</div>
+                    <div>2100</div>
+                    <div>2100</div>
+                    <div>2100</div>
+                </div>
+                <div class="table-item">
+                    <div>Максимальное число оборотов шпинделя, 1/мин</div>
+                    <div>10000</div>
+                    <div>10000</div>
+                    <div>10000</div>
+                    <div>10000</div>
+                </div>
+                <div class="table-item">
+                    <div>Мощность приводного инструмента (30 мин/пост), кВт</div>
+                    <div>22 / 26</div>
+                    <div>22 / 26</div>
+                    <div>22 / 26</div>
+                    <div>22 / 26</div>
+                </div>
+                <div class="table-item">
+                    <div>Макс. рабочая подача, мм/мин</div>
+                    <div>1–12000</div>
+                    <div>1–12000</div>
+                    <div>1–12000</div>
+                    <div>1–12000</div>
+                </div>
+                <div class="table-item">
+                    <div>Подачи холостого хода по осям X/Y/Z, мм</div>
+                    <div>30/30/20</div>
+                    <div>30/30/20</div>
+                    <div>30/30/20</div>
+                    <div>30/30/20</div>
+                </div>
+                <div class="table-item">
+                    <div>Хвостовик инструмента, ВТ</div>
+                    <div>–50</div>
+                    <div>–50</div>
+                    <div>–50</div>
+                    <div>–50</div>
+                </div>
+                <div class="table-item">
+                    <div>Количество позиций приводного инструмента</div>
+                    <div>32</div>
+                    <div>32</div>
+                    <div>32</div>
+                    <div>32</div>
+                </div>
+                <div class="table-item">
+                    <div>Габаритные размеры, ШxДxВ, мм</div>
+                    <div>3950х5100х4300</div>
+                    <div>3950х5100х4300</div>
+                    <div>3950х5100х4300</div>
+                    <div>3950х5100х4300</div>
+                </div>
+                <div class="table-item">
+                    <div>Вес, кг</div>
+                    <div>20000</div>
+                    <div>20000</div>
+                    <div>20000</div>
+                    <div>20000</div>
+                </div>
+
+            </div>
+        </div>
+        <div class="tab-box" id="tab2">
+            <h3>Конструктивные особенности</h3>
+            <div class="flex flex-col space-y-[15px] max-w-[885px]">
+                <p>Вертикальные обрабатывающие центры серии DGM имеют компоновку с неподвижным столом и подвижной траверсой,
+                    перемещающейся по вертикальным боковым элементам портала. Такая конструкция позволяет исключить влияние
+                    веса обрабатываемой детали на подвижные органы, обеспечивая высокую точность при любых режимах
+                    обработки, а также высокую скорость холостых перемещений.
+                </p>
+                <p>Станки DGM оснощаются роликовыми направляющими качения, обеспечивающими высокую жесткость и высокую
+                    скорость быстрых перемещений.</p>
+                <p>Привод по оси Y осуществляется синхронно от двух сервоприводов, обеспечивая оптимальные динамические
+                    параметры.</p>
+            </div>
+        </div>
+
+        <div class="tab-box" id="tab3">
+            <h3>Комплектация и опции</h3>
+            <p>
+                Возможно оснащение рабочим столом в четырех вариантах:
+            </p>
+            <ul class="list-dots">
+                <li>неподвижный стол (модель DGM-1400T);</li>
+                <li>вращающийся двухзонный стол для быстрой смены заготовки (модель DGM-1400S);</li>
+                <li>поворотный стол для 4-осевой обработки (модель DGM-1400A);</li>
+                <li>наклонно-поворотный стол для 5-осевой обработки (модель DGM-1400A+C).</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="bg-[#F5F5F7] lg:mt-[80px] sm:mt-[48px] mt-[32px] sm:pb-[48px] pb-[32px]">
+        <div class="container">
+            <div class="lg:pt-[80px] sm:pt-[52px] pt-[32px] flex items-center justify-between">
+                <h2>Полезные материалы</h2>
+                <div class="items-center sm:flex hidden gap-[8px]">
+                    <div class="swiper-button-prev newsPage-swiper-prev btn-icon-blue-outline">
+                        <img src="/assets/images/swiperArrow.svg" alt="">
+                    </div>
+                    <div class="swiper-button-next newsPage-swiper-next btn-icon-blue-outline">
+                        <img src="/assets/images/swiperArrow.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-container forYou-swiper lg:mt-[40px] sm:mt-[32px] mt-[16px]">
+                <div class="swiper-wrapper pr-[1px]">
+                    <div class="swiper-slide lg:p-[20px] p-[16px]  news-big-item bg-white">
+                        <a href="#" class="">
+                            <img src="/assets/images/newsBlock.jpg" class="w-full object-cover mb-[16px]" alt="">
+                            <h4 class="truncate-3-lines">Серия станков с ЧПУ для лазерной резки»
+                                научно-исследовательских работ прошла</h4>
+                            <div class="subtitle flex justify-between items-center lg:mt-[30px] mt-[24px]">
+                                05 сентября 2024
+                                <img src="/assets/images/arrowRight.svg" class="news-arrow" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide lg:p-[20px] p-[16px] news-big-item bg-white">
+                        <a href="#" class="">
+                            <img src="/assets/images/newsBlock.jpg" class="w-full object-cover mb-[16px]" alt="">
+                            <h4 class="truncate-3-lines">Серия станков с ЧПУ для лазерной резки»
+                                научно-исследовательских работ прошла</h4>
+                            <div class="subtitle flex justify-between items-center lg:mt-[30px] mt-[24px]">
+                                05 сентября 2024
+                                <img src="/assets/images/arrowRight.svg" class="news-arrow" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide lg:p-[20px] p-[16px] news-big-item bg-white">
+                        <a href="#" class="">
+                            <h4 class="truncate-3-lines">Серия станков с ЧПУ для лазерной резки»
+                                научно-исследовательских работ прошла</h4>
+                            <div class="subtitle flex justify-between items-center lg:mt-[30px] mt-[24px]">
+                                05 сентября 2024
+                                <img src="/assets/images/arrowRight.svg" class="news-arrow" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide lg:p-[20px] p-[16px] news-big-item bg-white">
+                        <a href="#" class="">
+                            <h4 class="truncate-3-lines">Серия станков с ЧПУ для лазерной резки»
+                                научно-исследовательских работ прошла</h4>
+                            <div class="subtitle flex justify-between items-center lg:mt-[30px] mt-[24px]">
+                                05 сентября 2024
+                                <img src="/assets/images/arrowRight.svg" class="news-arrow" alt="">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <script>
+              var swiperNews = new Swiper('.forYou-swiper', {
+                slidesPerView: 1.16,
+                spaceBetween: 12,
+                loop: true,
+                autoHeight: true,
+                navigation: {
+                  nextEl: '.newsPage-swiper-next',
+                  prevEl: '.newsPage-swiper-prev',
+                },
+                breakpoints: {
+                  640: {
+                    slidesPerView: 2,
+                    spaceBetween: 24,
+                  },
+                  1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 34,
+                  },
+                },
+              });
+            </script>
+        </div>
+    </div>
+</div>
+
+{{>form}}

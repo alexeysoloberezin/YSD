@@ -1,0 +1,47 @@
+<div class="swiper mainSwiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+            {{>mainSlide
+                title="Производство высококачественного оборудования для обработки листового металла"
+                text="Компания YSD — лидер по производству гидравлических листогибочных прессов и гидравлических гильотинных ножниц в Китае и крупнейший экспортёр листообрабатывающего оборудования"
+                image="/assets/images/mainImage.jpg"
+            }}
+        </div>
+        <div class="swiper-slide">
+            {{>mainSlide
+            title="Производство 123 высококачественного оборудования для обработки листового металла"
+            text="Компания YSD — лидер по производству гидравлических листогибочных прессоКомпания YSD — лидер по производству гидравлических листогибочных прессов и гидКомпания YSD — лидер по производству гидравлических листогибочных прессов и гидв и гидравлических гильотинных ножниц в Китае и крупнейший экспортёр листообрабатывающего оборудования"
+            image="https://sotni.ru/wp-content/uploads/2023/08/promyshlennost-2.webp"
+            }}
+        </div>
+        <div class="swiper-slide">
+            {{>mainSlide
+            title="Производство 213 высококачественного оборудования для обработки листового металла"
+            text="Компания YSD — лидер по производству гидравлических листогибочных прессов и гидравлических гильотинных ножниц в Китае и крупнейший экспортёр листообрабатывающего оборудования"
+            image="/assets/images/mainImage.jpg"
+            }}
+        </div>
+        ...
+    </div>
+    <!-- If we need pagination -->
+    <!-- If we need navigation buttons -->
+
+</div>
+
+<script>
+  const swiper = new Swiper('.mainSwiper', {
+    // Optional parameters
+    loop: true,
+    effect: 'fade',
+    autoHeight: true,
+
+    // If we need pagination
+    // Navigation arrows
+    navigation: {
+      nextEl: '.main-next',
+      prevEl: '.main-prev',
+    },
+  });
+</script>

@@ -1,0 +1,30 @@
+<div class="mainSlide bg-[#F2F5FD] relative ">
+    <div class="lg:absolute top-0 right-0 lg:w-[46vw] lg:h-full sm:h-[380px] h-[200px]">
+        <div class="absolute top-0 left-[-30px] z-2 lg:block hidden">
+            <img src="/assets/images/mainBlockTriangle.svg" alt="">
+        </div>
+        <img src="{{image}}" class=" object-cover w-full h-full" alt="">
+
+        <img class="lg:hidden max-w-[85vw] h-[9px] object-cover object-right" src="/assets/images/mainBlockTriangle2.svg" alt="">
+    </div>
+
+    <div class="container h-full flex relative">
+        <div class="max-w-[54%] max-w-[682px] mainSlide-item relative z-10 lg:pb-0 sm:pb-[40px] pb-[24px]">
+            <h1 class="mb-[16px] sm:mt-[32px] mt-[20px] lg:mt-0">{{title}}</h1>
+            <p class="lg:mb-[40px] mb-[24px]">{{text}}</p>
+            <a href="#" class="btn-blue">
+                Перейти в каталог
+                <img src="/assets/images/arrow.svg" alt="">
+            </a>
+        </div>
+
+        <div class="flex h-[44px] absolute lg:bottom-[45px] sm:bottom-[40px] bottom-[24px] gap-[12px] lg:right-0 sm:right-[24px] right-[16px]">
+            <div class="swiper-button-prev main-prev btn-icon">
+                <img src="/assets/images/swiperArrow.svg" alt="">
+            </div>
+            <div class="swiper-button-next main-next btn-icon">
+                <img src="/assets/images/swiperArrow.svg" alt="">
+            </div>
+        </div>
+    </div>
+</div>

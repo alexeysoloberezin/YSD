@@ -1,0 +1,102 @@
+<div class="catalogSwiperWrapper">
+    <div class="flex items-center justify-between">
+        <h2>{{title}}</h2>
+        <div class="items-center sm:flex hidden">
+            <a href="#" class="text-link h-fit mr-[24px]" style="line-height: 1;">В раздел</a>
+            <div class="swiper-button-prev catalog-{{key}}-swiper-prev btn-icon-outline">
+                <img src="/assets/images/swiperArrow.svg" alt="">
+            </div>
+            <div class="swiper-button-next catalog-{{key}}-swiper-next btn-icon-outline">
+                <img src="/assets/images/swiperArrow.svg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="swiper-container catalog-swiper {{key}}-swiper lg:mt-[40px] sm:mt-[32px] mt-[16px]">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide catalog-swiper-item">
+                <a href="#" class="">
+                    <img src="/assets/images/catalog/catalogM1.png" class="w-full object-cover mb-[16px]"
+                         alt="">
+                    <h4 class="">Токарные станки с ЧПУ моделей DA-200 / DA-260 / DA-280</h4>
+                    <p class="truncate-3-lines">
+                        Краткий анонс оборудования. Постоянный количественный рост и сфера нашей активности.
+                    </p>
+                    <div class="catalog-swiper-item-more">Подробнее </div>
+
+                </a>
+            </div>
+            <div class="swiper-slide catalog-swiper-item">
+                <a href="#" class="">
+                    <img src="/assets/images/catalog/catalogM2.png" class="w-full object-cover mb-[16px]"
+                         alt="">
+                    <h4 class="">Вертикально-фрезерный обрабатывающий центр колонного типа серии DLV</h4>
+                    <p class="truncate-3-lines">
+                        Краткий анонс оборудования. Постоянный количественный рост и сфера нашей активности.
+                    </p>
+                    <div class="catalog-swiper-item-more">Подробнее </div>
+
+                </a>
+            </div>
+            <div class="swiper-slide catalog-swiper-item">
+                <a href="#" class="">
+                    <img src="/assets/images/catalog/catalogM3.png" class="w-full object-cover mb-[16px]"
+                         alt="">
+                    <h4 class="">Вертикальные фрезерные станки с ЧПУ серии DGM</h4>
+                    <p class="truncate-3-lines ">
+                        Краткий анонс оборудования. Постоянный количественный рост и сфера нашей активности.
+                    </p>
+                    <div class="catalog-swiper-item-more">Подробнее </div>
+
+                </a>
+            </div>
+            <div class="swiper-slide catalog-swiper-item">
+                <a href="#" class="">
+                    <img src="/assets/images/catalog/catalogM4.png" class="w-full object-cover mb-[16px]"
+                         alt="">
+                    <h4 class="">Автоматы продольного точения (“Swiss type”) с ЧПУ</h4>
+                    <p class="truncate-3-lines">
+                        Краткий анонс оборудования. Постоянный количественный рост и сфера нашей активности.
+                    </p>
+                    <div class="catalog-swiper-item-more">Подробнее </div>
+                </a>
+            </div>
+            <div class="swiper-slide catalog-swiper-item">
+                <a href="#" class="">
+                    <img src="/assets/images/catalog/catalogM4.png" class="w-full object-cover mb-[16px]"
+                         alt="">
+                    <h4 class="">Автоматы продольного точения (“Swiss type”) с ЧПУ</h4>
+                    <p class="truncate-3-lines">
+                        Краткий анонс оборудования. Постоянный количественный рост и сфера нашей активности.
+                    </p>
+                    <div class="catalog-swiper-item-more">Подробнее </div>
+                </a>
+            </div>
+        </div>
+        <!-- Add Navigation Arrows -->
+        <div class="btn-blue-light sm:hidden w-full mt-[16px]">
+            В раздел
+        </div>
+    </div>
+    <script>
+      var swiperNews = new Swiper('.{{key}}-swiper', {
+        slidesPerView: 1.16,
+        spaceBetween: 16,
+        loop: true,
+        autoHeight: true,
+        navigation: {
+          nextEl: '.catalog-{{key}}-swiper-next',
+          prevEl: '.catalog-{{key}}-swiper-prev',
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 3,
+            spaceBetween: 24,
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 34,
+          },
+        },
+      });
+    </script>
+</div>

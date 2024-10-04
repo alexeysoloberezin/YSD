@@ -1,0 +1,31 @@
+<div class="relative lg:py-20 sm:py-[24px] py-[16px]">
+    <img src="/assets/images/formBg.jpg" class="absolute top-0 left-0 w-full h-full object-cover" alt="">
+    <div class="container mx-auto relative z-10">
+        <div class="bg-white lg:py-16 lg:px-20 sm:p-[32px] p-[20px]">
+            <h2 class="text-2xl font-bold lg:mb-[32px] sm:mb-[16px] mb-[8px]">Получить консультацию</h2>
+            <form>
+                <div class="grid grid-cols-1 lg:grid-cols-3 lg:gap-[32px] sm:gap-[16px] gap-[12px] lg:mb-[32px] sm:mb-[16px] mb-[12px]">
+                    <input type="text" placeholder="Ваше имя*" class="border-bottom border-gray-300 h-[44px]  py-2 pr-4 w-full focus:outline-none focus:border-blue-400 focus:ring-blue-500">
+                    <input type="text" placeholder="Телефон*" class="border-bottom border-gray-300 h-[44px]  py-2 pr-4 w-full focus:outline-none focus:border-blue-400 focus:ring-blue-500">
+                    <input type="email" placeholder="E-mail" class="border-bottom border-gray-300 h-[44px]  py-2 pr-4 w-full focus:outline-none focus:border-blue-400 focus:ring-blue-500">
+                </div>
+                <textarea placeholder="Сообщение" class="border-bottom border-gray-300  py-2 pr-4 w-full h-[50px] focus:outline-none focus:border-blue-400 focus:ring-blue-500 mb-[24px]"></textarea>
+
+                <div class="lg:flex justify-between">
+                    <div class="checkbox relative">
+                        <input type="checkbox" id="accept" class="absolute opacity-0">
+                        <label for="accept" class="flex align-center gap-2 cursor-pointer text-[13px]">
+                            <span class="w-[20px] h-[20px]   rounded-sm relative flex-shrink-0"></span>
+                            <div>
+                                <a href="#" class="text-link inline">Принимаю условия</a> обработки и хранения персональных данных
+                            </div>
+                        </label>
+                    </div>
+                    <button  class="btn-blue open-thanks lg:mt-0 mt-[24px] lg:w-fit w-full">
+                        Отправить заявку
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

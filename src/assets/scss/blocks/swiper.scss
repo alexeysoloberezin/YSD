@@ -1,0 +1,16 @@
+.swiper-button-prev, .swiper-button-next{
+  position: relative  !important;
+  z-index: 40;
+  right: initial !important;
+  left: initial !important;
+  top: initial !important;
+  width: 44px  !important;
+  transform: initial !important;
+  margin: 0  !important;
+  &:after{
+    content: none !important;
+  }
+}
+.swiper-button-next img{
+  transform: rotate(180deg);
+}

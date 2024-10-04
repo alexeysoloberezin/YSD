@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    
+    <!-- Useful meta tags -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="index, follow">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <title>Новости</title>
+</head>
+<body class="app">
+    <script>
+        var config = {
+          showCookie: false
+        }
+    </script>
+    <form action="#" class="cookie">
+        <div class="font-light">Мы используем cookie. Это дает нам возможность обеспечивать корректную работу сайта. Посещая сайт, вы даете
+            согласие на обработку ваших персональных данных.
+        </div>
+        <button class="btn-blue mt-[16px] w-full close-cookie">Принимаю</button>
+    </form>
+    <div class="fon"></div>
+
+    <div class="searchBox">
+        <form action="#" class="container searchBox-wrp">
+            <div class="btn-icon-white close-search">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 7H3.83L9.42 1.41L8 0L0 8L8 16L9.41 14.59L3.83 9H16V7Z" fill="#C2C2C6"/>
+                </svg>
+            </div>
+            <input type="text" placeholder="Поиск" class="h-[52px]  bg-gray px-[14px] py-[16px]">
+            <button class="searchBox-close">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.99805 4L11.9507 11.9526" stroke="black" stroke-width="1.5"/>
+                    <path d="M11.998 4L4.04543 11.9526" stroke="black" stroke-width="1.5"/>
+                </svg>
+            </button>
+            <button class="searchBox-btn">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.5 0.000571717C8.22391 0.000723346 9.87715 0.685688 11.096 1.90478C12.3149 3.12388 12.9996 4.77724 12.9994 6.50114C12.9993 8.11114 12.4092 9.59109 11.4391 10.731L11.709 11.001L12.499 11.0011L17.4986 16.0015L15.9985 17.5014L10.9989 12.501L10.999 11.711L10.729 11.4409C9.58891 12.4108 8.10886 13.0007 6.49886 13.0006C4.77495 13.0004 3.12171 12.3155 1.90283 11.0964C0.68395 9.87727 -0.000723346 8.22391 -0.000571717 6.5C-0.000420088 4.77609 0.684545 3.12285 1.90364 1.90397C3.12273 0.685094 4.77609 0.000420088 6.5 0.000571717ZM6.49982 2.00057C3.99982 2.00035 1.99965 4.00018 1.99943 6.50018C1.99921 9.00018 3.99903 11.0004 6.49903 11.0006C8.99903 11.0008 10.9992 9.00097 10.9994 6.50097C10.9996 4.00097 8.99982 2.00079 6.49982 2.00057Z"
+                          fill="#ABABB0"/>
+                </svg>
+            </button>
+        </form>
+        <div class="container ">
+    <!--        <div class="searchBox-result">-->
+    <!--            <span>Токарные станки с ЧПУ моделей DA-200 / DA-260 / DA-280</span>-->
+    <!--            <span>Токарные металлообрабатывающие центры</span>-->
+    <!--        </div>-->
+        </div>
+    </div>
+    
+    <header class="bg-white border-b header">
+        <!-- Left side (location and contact details) -->
+        <div class="header-catalog">
+            <div class="header-catalog-wrp container">
+                <div class="header-catalog-item">
+                    <div class="header-catalog-img"><img src="/assets/images/headerCatalog/img1.png" alt=""></div>
+    
+                    <span class="header-catalog-text">Рубка листового металла</span>
+                </div>
+                <div class="header-catalog-item">
+                    <div class="header-catalog-img"><img src="/assets/images/headerCatalog/img2.png" alt=""></div>
+    
+                    <span class="header-catalog-text">Гибка листового металла</span>
+                </div>
+                <div class="header-catalog-item">
+                    <div class="header-catalog-img"><img src="/assets/images/headerCatalog/img3.png" alt=""></div>
+    
+                    <span class="header-catalog-text">Обработка труб, профиля и&nbsp;проволоки</span>
+                </div>
+                <div class="header-catalog-item">
+                    <div class="header-catalog-img"><img src="/assets/images/headerCatalog/img4.png" alt=""></div>
+                    <span class="header-catalog-text">Роботизированные комплексы</span>
+                </div>
+            </div>
+        </div>
+    
+        <div class="py-[14px] lg:block hidden border-b border-1 border-[#DEDEE2]  w-full">
+            <div class="flex items-center container">
+                <div class="text-sm  flex items-center gap-2">
+                    <img src="/assets/images/point.svg" alt="">
+    
+                    г. Москва, ул. Шарикоподшипниковская, 4, корп. 25, к. 1
+                </div>
+                <a href="tel:88009008888" class="text-sm hover:underline  flex items-center gap-2  ml-auto">
+                    <img src="/assets/images/phoneHead.svg" alt="">
+                    8 800 900-88-88
+                </a>
+                <a href="mailto:info@ysd.ru" class="text-sm hover:underline  flex items-center gap-2 ml-[24px]">
+                    <img src="/assets/images/mailto.svg" alt="">
+                    info@ysd.ru
+                </a>
+            </div>
+        </div>
+    
+    
+        <!-- Logo and Navigation -->
+        <div class="py-[16px] border-b border-1 border-[#DEDEE2]  w-full relative z-[20]">
+            <div class="container flex items-center  w-full">
+                <div class="flex items-center space-x-6">
+                    <img src="/assets/images/logo.svg" alt="YSD logo" class="h-8">
+                    <button class="btn-blue open-header-catalog lg:flex hidden">
+                        <img class="burg" src="/assets/images/burger.svg" alt="">
+                        <img class="clos" src="/assets/images/close.svg" alt="">
+                        <span class="">
+                            Каталог
+                        </span>
+                    </button>
+                    <nav class="flex space-x-[24px] text-[14px] font-medium text-gray-700 lg:block hidden">
+                        <a href="/" class="hover-text-blue">Главная</a>
+                        <a href="#" class="hover-text-blue">О компании</a>
+                        <a href="#" class="hover-text-blue">Сервис</a>
+                        <a href="/news.html" class="hover-text-blue">Новости</a>
+                        <a href="/contacts.html" class="hover-text-blue">Контакты</a>
+                    </nav>
+                </div>
+    
+                <div class="flex items-center ml-auto">
+                    <div class="relative ">
+                        <button class="btn-icon open-search">
+                            <img src="/assets/images/search.svg" alt="">
+                        </button>
+                    </div>
+                    <button class="btn-blue-outline sm:flex hidden ml-4 open-formPopup">
+                        Оставить заявку
+                    </button>
+    
+                    <button class="btn-icon-blue open-header-catalog lg:hidden flex ml-[16px]">
+                        <img class="burg" src="/assets/images/burger.svg" alt="">
+                        <img class="clos" src="/assets/images/close.svg" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <nav class="mobile-nav">
+        <ul class="main-menu">
+            <li>
+                <div class="accord">Каталог</div>
+                <div class="accord-block">
+                    <ul class="grid space-y-[16px]">
+                        <li>Рубка листового металла</li>
+                        <li>Гибка листового металла</li>
+                        <li>Обработка труб, профиля и проволоки</li>
+                        <li>Роботизированные комплексы</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="accord">О компании</div>
+                <div class=" accord-block">
+                    <ul class="grid space-y-[16px]">
+                        <li>Рубка листового металла</li>
+                        <li>Роботизированные комплексы</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="accord">Сервис</div>
+                <div class=" accord-block">
+                    <ul class="grid space-y-[16px]">
+                        <li>Рубка листового металла</li>
+                        <li>Роботизированные комплексы</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="accord">Новости</div>
+                <div class=" accord-block">
+                    <ul class="grid space-y-[16px]">
+                        <li>Рубка листового металла</li>
+                        <li>Роботизированные комплексы</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="accord">Контакты</div>
+                <div class="accord-block">
+                    <ul class="grid space-y-[16px]">
+                        <li>Рубка листового металла</li>
+                        <li>Роботизированные комплексы</li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    
+        <div class="contact-info grid space-y-[12px] text-[14px]">
+            <div class="text-sm  flex items-center gap-[8px]">
+                <img src="/assets/images/point.svg" alt="">
+    
+                г. Москва, ул. Шарикоподшипниковская, 4, корп. 25, к. 1
+            </div>
+            <div class="text-sm  flex items-center gap-[8px]  ">
+                <img src="/assets/images/phoneHead.svg" alt="">
+                8 800 900-88-88
+            </div>
+            <div class="text-sm  flex items-center  gap-[8px]">
+                <img src="/assets/images/mailto.svg" alt="">
+                info@ysd.ru
+            </div>
+        </div>
+    
+        <div class="flex gap-[8px] mt-[16px]">
+            <a href="#"><img src="/assets/images/socials/viber.svg" alt=""></a>
+            <a href="#"><img src="/assets/images/socials/tg.svg" alt=""></a>
+            <a href="#"><img src="/assets/images/socials/wa.svg" alt=""></a>
+        </div>
+    
+        <button class="btn-blue-outline  sm:hidden flex w-full mt-[16px]">
+            Оставить заявку
+        </button>
+    </nav>
+    
+
+    
+    
+    <div class="container">
+        <div class="breadcrumbs">
+            <div><a href="/">Главная</a></div>
+            <div><a href="#">Новости</a></div>
+        </div>
+    </div>
+    
+    <div class="container pb-[100px]">
+        <h1 class="lg:mb-[40px] sm:mb-[24px] mb-[16px]">Новости</h1>
+    
+        <div class="news-items">
+            <a href="#" class="news-item ">
+                <div class="news-item-wrp">
+                    <div class="flex-shrink-0">
+                        <img class="w-[274px] min-h-[180px] news-item-img" src="/assets/images/news/news1.jpg" alt="">
+                    </div>
+                    <div>
+                        <h4>Вебер Комеханикс» приглашает на&nbsp;выставку «Металлообработка 2024»</h4>
+                        <div class="news-item-text truncate-4-lines">
+                            Задача организации, в особенности же сложившаяся структура организации позволяет оценить
+                            значение форм
+                            развития. Повседневная практика показывает, что консультация с широким активом играет важную
+                            роль в
+                            формировании модели развития. Равным образом консультация с широким активом обеспечивает
+                            широкому кругу
+                            (специалистов) участие в формировании существенных финансовых и административных условий. Таким
+                            образом
+                            постоянный количественный рост и сфера нашей активности влечет за собой процесс внедрения и
+                            модернизации
+                            дальнейших направлений развития.
+                        </div>
+                        <div class="subtitle flex justify-between items-center lg:mt-[30px] mt-[24px]">
+                            05 сентября 2024
+                            <img src="/assets/images/arrowRight.svg" class="news-arrow" alt="">
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="news-item ">
+                <div class="news-item-wrp">
+                    <div class="flex-shrink-0">
+                        <img class="w-[274px] min-h-[180px] news-item-img" src="/assets/images/news/news2.jpg" alt="">
+                    </div>
+                    <div>
+                        <h4>Вебер Комеханикс» приглашает на&nbsp;выставку «Металлообработка 2024»</h4>
+                        <div class="news-item-text truncate-4-lines">
+                            Задача организации, в особенности же сложившаяся структура организации позволяет оценить
+                            значение форм развития. Повседневная практика показывает, что консультация с широким активом
+                            играет важную роль в формировании модели развития. Равным образом консультация с широким активом
+                            обеспечивает широкому кругу (специалистов) участие в формировании существенных финансовых и
+                            административных условий. Таким образом постоянный количественный рост и сфера нашей активности
+                            влечет за собой процесс внедрения и модернизации дальнейших направлений развития.
+                        </div>
+                        <div class="subtitle flex justify-between items-center lg:mt-[30px] mt-[24px]">
+                            05 сентября 2024
+                            <img src="/assets/images/arrowRight.svg" class="news-arrow" alt="">
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="news-item ">
+                <div class="news-item-wrp">
+                    <div class="flex-shrink-0">
+                        <img class="w-[274px] min-h-[180px] news-item-img" src="/assets/images/news/news3.jpg" alt="">
+                    </div>
+                    <div>
+                        <h4>Итоги выставки «Металлообработка&nbsp;2024»</h4>
+                        <div class="news-item-text truncate-4-lines">
+                            Задача организации, в особенности же сложившаяся структура организации позволяет оценить
+                            значение форм развития. Повседневная практика показывает, что консультация с широким активом
+                            играет важную роль в формировании модели развития. Равным образом консультация с широким активом
+                            обеспечивает широкому кругу (специалистов) участие в формировании существенных финансовых и
+                            административных условий. Таким образом постоянный количественный рост и сфера нашей активности
+                            влечет за собой процесс внедрения и модернизации дальнейших направлений развития.
+                        </div>
+                        <div class="subtitle flex justify-between items-center lg:mt-[30px] mt-[24px]">
+                            05 сентября 2024
+                            <img src="/assets/images/arrowRight.svg" class="news-arrow" alt="">
+                        </div>
+                    </div>
+                </div>
+            </a>
+    
+            <!--        template if not image-->
+            <a href="#" class="news-item ">
+                <div class="news-item-wrp">
+                    <div>
+                        <h4>Осенние мероприятия</h4>
+                        <div class="news-item-text truncate-4-lines">
+                            Задача организации, в особенности же сложившаяся структура организации позволяет оценить
+                            значение форм развития. Повседневная практика показывает, что консультация с широким активом
+                            играет важную роль в формировании модели развития. Равным образом консультация с широким активом
+                            обеспечивает широкому кругу (специалистов) участие в формировании существенных финансовых и
+                            административных условий. Таким образом постоянный количественный рост и сфера нашей активности
+                            влечет за собой процесс внедрения и модернизации дальнейших направлений развития.
+                        </div>
+                        <div class="subtitle flex justify-between items-center lg:mt-[30px] mt-[24px]">
+                            05 сентября 2024
+                            <img src="/assets/images/arrowRight.svg" class="news-arrow" alt="">
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="news-item ">
+                <div class="news-item-wrp">
+                    <div class="flex-shrink-0">
+                        <img class="w-[274px] min-h-[180px] news-item-img" src="/assets/images/news/news6.jpg" alt="">
+                    </div>
+                    <div>
+                        <h4>Китай снизил поставки оборудования в Россию впервые с конца 2022 года</h4>
+                        <div class="news-item-text truncate-4-lines">
+                            Задача организации, в особенности же сложившаяся структура организации позволяет оценить
+                            значение форм развития. Повседневная практика показывает, что консультация с широким активом
+                            играет важную роль в формировании модели развития. Равным образом консультация с широким активом
+                            обеспечивает широкому кругу (специалистов) участие в формировании существенных финансовых и
+                            административных условий. Таким образом постоянный количественный рост и сфера нашей активности
+                            влечет за собой процесс внедрения и модернизации дальнейших направлений развития.
+                        </div>
+                        <div class="subtitle flex justify-between items-center lg:mt-[30px] mt-[24px]">
+                            05 сентября 2024
+                            <img src="/assets/images/arrowRight.svg" class="news-arrow" alt="">
+                        </div>
+                    </div>
+                </div>
+            </a>
+    
+            <div class="mt-[8px]">
+                <div class="flex items-center justify-between  pagination">
+                    <div class="flex items-center ">
+                        <div class="flex  space-x-2">
+                            <button class="pagination-el active" disabled>
+                                1
+                            </button>
+                            <button class="pagination-el">2</button>
+                            <button class="pagination-el">3</button>
+                            <button class="pagination-el">4</button>
+                            <button class="pagination-el sm:block hidden">5</button>
+                            <button class="pagination-el sm:block hidden">6</button>
+                            <button class="pagination-el">...</button>
+                        </div>
+                        <!-- Next Button -->
+                        <button class="pagination-el">
+                            <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.13604 14.364L7.5 8L1.13604 1.63604" stroke="#181716" stroke-width="2"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class=" text-right text-gray text-[14px] sm:block hidden">
+                        Показано 24 из 120 товаров
+                    </div>
+                </div>        </div>
+    
+        </div>
+    </div>
+    
+    <div class="relative lg:py-20 sm:py-[24px] py-[16px]">
+        <img src="/assets/images/formBg.jpg" class="absolute top-0 left-0 w-full h-full object-cover" alt="">
+        <div class="container mx-auto relative z-10">
+            <div class="bg-white lg:py-16 lg:px-20 sm:p-[32px] p-[20px]">
+                <h2 class="text-2xl font-bold lg:mb-[32px] sm:mb-[16px] mb-[8px]">Получить консультацию</h2>
+                <form>
+                    <div class="grid grid-cols-1 lg:grid-cols-3 lg:gap-[32px] sm:gap-[16px] gap-[12px] lg:mb-[32px] sm:mb-[16px] mb-[12px]">
+                        <input type="text" placeholder="Ваше имя*" class="border-bottom border-gray-300 h-[44px]  py-2 pr-4 w-full focus:outline-none focus:border-blue-400 focus:ring-blue-500">
+                        <input type="text" placeholder="Телефон*" class="border-bottom border-gray-300 h-[44px]  py-2 pr-4 w-full focus:outline-none focus:border-blue-400 focus:ring-blue-500">
+                        <input type="email" placeholder="E-mail" class="border-bottom border-gray-300 h-[44px]  py-2 pr-4 w-full focus:outline-none focus:border-blue-400 focus:ring-blue-500">
+                    </div>
+                    <textarea placeholder="Сообщение" class="border-bottom border-gray-300  py-2 pr-4 w-full h-[50px] focus:outline-none focus:border-blue-400 focus:ring-blue-500 mb-[24px]"></textarea>
+    
+                    <div class="lg:flex justify-between">
+                        <div class="checkbox relative">
+                            <input type="checkbox" id="accept" class="absolute opacity-0">
+                            <label for="accept" class="flex align-center gap-2 cursor-pointer text-[13px]">
+                                <span class="w-[20px] h-[20px]   rounded-sm relative flex-shrink-0"></span>
+                                <div>
+                                    <a href="#" class="text-link inline">Принимаю условия</a> обработки и хранения персональных данных
+                                </div>
+                            </label>
+                        </div>
+                        <button  class="btn-blue open-thanks lg:mt-0 mt-[24px] lg:w-fit w-full">
+                            Отправить заявку
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-[#262626] text-white py-10">
+        <div class="container mx-auto flex flex-wrap justify-between gap-4 text-[14px]">
+            <!-- Левый блок -->
+            <div class="lg:max-w-[290px] lg:w-fit w-full font-light">
+                <a href="/">
+                    <img src="/assets/images/logoWhite.svg" alt="YSD Logo" class="lg:mb-[36px] sm:mb-[32px] mb-[24px]">
+                </a>
+                <div class="lg:block hidden">
+                    <p>г. Москва, ул. Шарикоподшипниковская, 4, корп. 25, к.1</p>
+                    <p>тел. <a href="tel:88009008888" class="hover:underline">8 800 900-88-88</a>, e-mail: <a class="hover:underline" href="mailto:info@ysd.ru" >info@ysd.ru</a></p>
+                </div>
+            </div>
+            <!-- Средний блок -->
+            <div>
+                <div class="font-semibold mb-[16px]">Каталог</div>
+                <ul class="grid space-y-[16px] font-light">
+                    <li><a href="/catalog.html" class="hover-text-blue">Рубка листового металла</a></li>
+                    <li><a href="/catalog.html" class="hover-text-blue">Гибка листового металла</a></li>
+                    <li><a href="/catalog.html" class="hover-text-blue">Обработка труб, профиля и проволоки</a></li>
+                    <li><a href="/catalog.html" class="hover-text-blue">Роботизированные комплексы</a></li>
+                </ul>
+            </div>
+            <!-- Правый блок -->
+            <div class="min-w-[310px]">
+                <ul class="flex lg:flex-row flex-col lg:space-x-[24px] space-y-[24px] lg:space-y-[0px] font-semibold">
+                    <li><a href="/" class="hover-text-blue">Главная</a></li>
+                    <li><a href="/" class="hover-text-blue">О компании</a></li>
+                    <li><a href="/" class="hover-text-blue">Сервис</a></li>
+                    <li><a href="/news.html" class="hover-text-blue">Новости</a></li>
+                    <li><a href="/contacts.html" class="hover-text-blue">Контакты</a></li>
+                </ul>
+                <div class="flex lg:ml-auto lg:justify-end space-x-[8px] lg:mt-[24px] mt-[32px]">
+                    <a href="#" class="text-xl w-[44px] h-[44px] rounded-full border border-[#FFFFFF33] hover:bg-[#FFFFFF19] hover:border-transparent flex justify-center align-center"><img class="max-w-[17px]" src="/assets/images/phone.svg" alt=""></a>
+                    <a href="#" class="text-xl w-[44px] h-[44px] rounded-full border border-[#FFFFFF33] hover:bg-[#FFFFFF19] hover:border-transparent flex justify-center align-center"><img class="max-w-[17px]" src="/assets/images/telegram.svg" alt=""></a>
+                    <a href="#" class="text-xl w-[44px] h-[44px] rounded-full border border-[#FFFFFF33] hover:bg-[#FFFFFF19] hover:border-transparent flex justify-center align-center"><img class="max-w-[17px]" src="/assets/images/wa.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="lg:hidden  text-[13px] sm:mt-[-35px] font-light opacity-70 mt-[24px] sm:!max-w-[45vw]">
+           <div class="container">
+               <p>г. Москва, ул. Шарикоподшипниковская, 4, корп. 25, к.1</p>
+               <p>тел. <a href="tel:88009008888" class="hover:underline">8 800 900-88-88</a>, e-mail: <a href="mailto:info@ysd.ru" class="hover:underline">info@ysd.ru</a></p>
+           </div>
+        </div>
+    
+        <div class="border-t border-gray-600 lg:mt-[40px] mt-[32px] lg:pt-[40px] pt-[24px] text-[14px] font-light">
+            <div class="container flex lg:flex-row flex-col gap-[12px] justify-between">
+                <p class="opacity-70">&copy; 2024 HUBEI TRI-RING METALFORMING EQUIPMENT CO., LTD (YSD). Все права защищены.</p>
+                <a class="opacity-70 underline hover:opacity-100" href="#">Политика в области обработки персональных данных</a>
+            </div>
+        </div>
+    </footer>
+
+    <form action="#" id="contactForm" class="modal formPopup grid gap-[16px]">
+        <button class="absolute close-modal w-[25px] h-[25px] top-[12px] right-[12px]"><img src="/assets/images/closeBlack.svg" alt=""></button>
+    
+        <h2 class=" text-center">Оставить заявку</h2>
+        <input type="text" placeholder="Ваше имя*"
+               class="border-bottom border-gray-300 h-[44px]  py-2 pr-4 w-full focus:outline-none focus:border-blue-400 focus:ring-blue-500">
+        <input type="text" placeholder="Телефон*"
+               class="border-bottom border-gray-300 h-[44px]  py-2 pr-4 w-full focus:outline-none focus:border-blue-400 focus:ring-blue-500">
+        <input type="email" placeholder="E-mail"
+               class="border-bottom border-gray-300 h-[44px]  py-2 pr-4 w-full focus:outline-none focus:border-blue-400 focus:ring-blue-500">
+        <textarea placeholder="Сообщение"
+                  class="border-bottom border-gray-300  py-2 pr-4 w-full h-[50px] focus:outline-none focus:border-blue-400 focus:ring-blue-500 "></textarea>
+    
+        <div class="checkbox relative my-[8px]">
+            <input type="checkbox" id="accept" class="absolute opacity-0">
+            <label for="accept" class="flex align-center gap-2 cursor-pointer text-[13px]">
+                <span class="w-[20px] h-[20px]   rounded-sm relative flex-shrink-0"></span>
+                <div>
+                    <a href="#" class="text-link inline">Принимаю условия</a> обработки и хранения персональных данных
+                </div>
+            </label>
+        </div>
+    
+        <button  class="btn-blue submitFormPopup  w-full">
+            Отправить
+        </button>
+    </form>
+    
+    <div class="modal modalThanks flex flex-col w-[480px] items-center">
+        <button class="absolute close-modal w-[25px] h-[25px] top-[12px] right-[12px]"><img src="/assets/images/closeBlack.svg" alt=""></button>
+        <h2 class="mb-[16px]">Заявка отправлена!</h2>
+        <div>Мы свяжемся с вами в&nbsp;ближайшее&nbsp;время</div>
+        <button class="btn-blue w-[120px] mt-[24px] close-modal">Ок</button>
+    </div>
+    <div class="goUp">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 16L9 3.83L14.59 9.42L16 8L8 -3.49691e-07L-3.49691e-07 8L1.41 9.41L7 3.83L7 16L9 16Z"
+                  fill="#323232"/>
+        </svg>
+    </div>
+
+<script src="assets/js/app.js"></script>
+</body>
+</html>

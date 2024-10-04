@@ -1,0 +1,45 @@
+.mobile-nav {
+  width: 480px;
+  background-color: #fff;
+  position: fixed;
+  top: 77px;
+  right: 0;
+  padding: 24px;
+  display: none;
+  font-size: 14px;
+  z-index: 40;
+  transform: translateX(100%);
+  transition: .5s;
+  @media (max-width: 1024px) {
+    display: block;
+  }
+  @media (max-width: 500px) {
+    width: 100vw;
+  }
+
+  &.active{
+    transform: translateX(0);
+  }
+  .accord{
+    font-weight: 700;
+    transition: .3s;
+
+    &.active{
+      margin-bottom: 16px;
+    }
+  }
+}
+
+.main-menu {
+  list-style-type: none;
+  border-bottom: 1px solid #DEDEE2;
+  margin-bottom: 24px;
+}
+
+.main-menu>li{
+  margin-bottom: 24px;
+}
+
+.social-icons a {
+  margin-right: 10px;
+}

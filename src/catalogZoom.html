@@ -1,0 +1,64 @@
+---
+layout: default
+title: Рубка листового металла
+---
+
+<div class="container">
+    <div class="breadcrumbs">
+        <div><a href="/">Главная</a></div>
+        <div><a href="/catalog.html">Каталог</a></div>
+        <div><a href="#">Рубка листового металла</a></div>
+    </div>
+</div>
+
+<div class="catalogMain lg:pb-[100px] sm:pb-[48px] pb-[32px]">
+    <div class="container">
+        <h1 class="mt-[32px] lg:mb-[40px] sm:mb-[32px] mb-[24px]">Рубка листового металла</h1>
+
+
+        <div class="flex mb-[32px]">
+            <div class=" items-center text-[14px] sm:flex hidden">
+                <div class="mr-[10px]">Товаров на странице:</div>
+                <div class="btn-icon-white">12</div>
+                <div class="btn-icon-white active">24</div>
+                <div class="btn-icon-white">48</div>
+            </div>
+
+
+            <div class="custom-select-wrapper sm:w-[275px] w-full ml-auto">
+                <!-- Hidden Input value from select here ** set unique ID**-->
+                <input type="hidden" value="" id="select1" name="select1">
+
+                <div class="custom-select">
+                    <div class="custom-select__trigger">
+                        <span>По названию</span>
+                        <div class="arrow"><img src="/assets/images/arrowDown.svg" alt=""></div>
+                    </div>
+                    <div class="custom-options">
+                        <span class="custom-option selected" data-value="option1">По названию</span>
+                        <span class="custom-option" data-value="option2">По дате</span>
+                        <span class="custom-option" data-value="option3">По цене</span>
+                        <span class="custom-option" data-value="option4">Option 4</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {{>catalogGrid}}
+
+        <div class="lg:mt-[40px] sm:mt-[24px] mt-[16px]">
+            {{>pagination}}
+        </div>
+
+        <div class="lg:mt-[64px] sm:mt-[40px] mt-[24px]">
+            <h2 class="lg:mb-[24px] mb-[14px]">Блок с СЕО текстом</h2>
+            <p>Когда говорят о тексте-заглушке, имеется в виду временный текст, который используется в качестве
+                заполнителя в ожидании реального содержания. Это может быть слово, фраза, предложение или абзац, которые
+                обычно имеют нейтральный или случайный смысл. Использование заглушек позволяет оценить общий вид и
+                компоновку материала, проверить, как текст будет выглядеть с точки зрения дизайна и визуальной
+                структуры.</p>
+        </div>
+    </div>
+</div>
+
+{{>form}}

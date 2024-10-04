@@ -1,0 +1,24 @@
+---
+layout: default
+title: Каталог
+---
+
+<div class="container">
+    <div class="breadcrumbs">
+        <div><a href="/">Главная</a></div>
+        <div><a href="#">Каталог</a></div>
+    </div>
+</div>
+
+<div class="catalogMain">
+    <div class="container">
+        <h1 class="mt-[32px] lg:mb-[40px] sm:mb-[32px] mb-[24px]">Каталог</h1>
+
+        {{>catalogSwiper title="Рубка листового металла" key="keyA"}}
+        {{>catalogSwiper title="Гибка листового металла" key="keyB"}}
+        {{>catalogSwiper title="Обработка труб, профиля и проволоки" key="keyC"}}
+        {{>catalogSwiper title="Роботизированные комплексы" key="keyD"}}
+    </div>
+</div>
+
+{{>form}}

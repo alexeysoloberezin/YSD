@@ -1,0 +1,100 @@
+---
+layout: default
+title: Главная
+---
+
+<div>
+    {{>main}}
+    {{>info }}
+    {{>catalog}}
+
+    <div class="about lg:pt-[80px] sm:pt-[40px] pt-[32px] lg:pb-[100px] sm:pb-[40px] pb-[32px] bg-gray mt-[100px]">
+        <div class="container ">
+            <div class="lg:flex grid sm:grid-cols-2 lg:gap-0 sm:gap-[24px] gap-3 lg:justify-between lg:pb-[40px] sm:pb-[32px] pb-[24px] border-bottom">
+                <div>
+                    <div class=number>267 000 <span>м²</span></div>
+                    <div class="font-medium">производственной площади</div>
+                </div>
+                <div>
+                    <div class="number">1500</div>
+                    <div class="font-medium">станков выпускаем <br/> ежегодно</div>
+                </div>
+                <div>
+                    <div class="number">20</div>
+                    <div class="font-medium">представительств <br/> по всему миру</div>
+                </div>
+                <div>
+                    <div class="number">80%</div>
+                    <div class="font-medium">рынка высокотоннажных <br/> прессов и гильотин в&nbsp;Китае</div>
+                </div>
+            </div>
+
+            <div class="lg:grid flex flex-col-reverse lg:grid-cols-[1fr_438px] lg:pt-[64px] sm:pt-[32px] pt-[24px] lg:gap-[32px] sm:gap-[24px] gap-[16px]">
+                <div class="p-margin">
+                    <h3 class="sm:mb-[16px] mb-[12px]">ООО «HUBEI TRI-RING METALFORMING EQUIPMENT»</h3>
+                    <p>Компания HUBEI TRI-RING METALFORMING EQUIPMENT CO., LTD (YSD) является одним из крупнейших
+                        государственным производителем высококачественного оборудования для обработки листового
+                        металла.</p>
+                    <p> На заводе производят гидравлические листогибочные прессы и гидравлические гильотинные ножницы
+                        под брендом YSD.</p>
+                    <p> Предприятие было основана в 1958 году правительством Китая и по истечению 64&nbsp;лет инновационного
+                        развития развилось в ведущую мировую научно-исследовательскую и&nbsp;производственную корпорацию.</p>
+
+                    <a href="#" class="text-link hover:underline">
+                        Подробней о компании
+                    </a>
+                </div>
+                <div>
+                    <img src="/assets/images/aboutImg.jpg" class="h-full object-cover border-2 border-[#fff]" alt="">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="news container lg:my-[100px] sm:my-[48px] my-[32px]">
+        <div class="lg:mb-[40px] sm:mb-[24px] mb-[16px] flex justify-between items-center">
+            <h2>Новости</h2>
+            <a class="text-link sm:block hidden hover:underline" href="#">Все новости</a>
+        </div>
+        <div class="grid sm:grid-cols-2 lg:gap-[32px] sm:gap-[24px] gap-[12px]">
+            <a href="#" class="lg:p-[32px] sm:p-[16px] sm:border news-big-item">
+                <img src="/assets/images/newsBlock.jpg" class="w-full object-cover" alt="">
+                <h4 class="mt-[16px]">Серия станков с ЧПУ для лазерной резки» научно-исследовательских работ прошла</h4>
+                <div class="subtitle flex justify-between items-center lg:mt-[30px] mt-[24px]">
+                    05 сентября 2024
+                    <img src="/assets/images/arrowRight.svg" class="news-arrow" alt="">
+                </div>
+            </a>
+            <div class="news-wrp">
+                <a href="#" class="news-item ">
+                    <h4>Вебер Комеханикс» приглашает на&nbsp;выставку «Металлообработка 2024»</h4>
+                    <div class="subtitle flex justify-between items-center lg:mt-[30px] mt-[24px]">
+                        05 сентября 2024
+                        <img src="/assets/images/arrowRight.svg" class="news-arrow" alt="">
+                    </div>
+                </a>
+                <a href="#" class="news-item grow">
+                    <h4>Итоги выставки «Металлообработка 2024»</h4>
+                    <div class="subtitle flex justify-between items-center lg:mt-[30px] mt-[24px]">
+                        04 сентября 2024
+                        <img src="/assets/images/arrowRight.svg" class="news-arrow" alt="">
+                    </div>
+                </a>
+                <a href="#" class="news-item grow">
+                    <h4>Осенние мероприятия</h4>
+                    <div class="subtitle flex justify-between items-center lg:mt-[30px] mt-[24px]">
+                        03 сентября 2024
+                        <img src="/assets/images/arrowRight.svg" class="news-arrow" alt="">
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="btn-blue-light sm:hidden w-full mt-[16px]">
+            Все новости
+        </div>
+    </div>
+
+    {{>form}}
+</div>
