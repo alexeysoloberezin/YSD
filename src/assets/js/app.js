@@ -8,36 +8,10 @@ const searchBox = document.querySelector('.searchBox');
 const btnCloseModal = document.querySelectorAll('.close-modal');
 const btnOpenModalThanks = document.querySelectorAll('.open-thanks');
 const modalThanks = document.querySelector('.modalThanks')
+const html = document.querySelector('html')
+const body = document.querySelector('body')
 
-btnOpenModalThanks.forEach(el => {
-  el.addEventListener('click', (e) => {
-    e.preventDefault()
-    modalThanks.classList.add('active')
-    fon.classList.add('active')
-  })
-})
-
-btnCloseModal.forEach(el => el.addEventListener('click', () => {
-  fon.classList.remove('active');
-  fon.classList.remove('all');
-  const modals = document.querySelectorAll('.modal');
-  modals.forEach(modal => {
-    modal.classList.remove('active');
-  })
-}))
-
-function headerCatalogInit() {
-  btns.forEach((btn) => {
-    btn.addEventListener('click', function () {
-      headerCatalog.classList.toggle('active');
-      fon.classList.toggle('active');
-      this.classList.toggle('active');
-      mobileNav.classList.toggle('active');
-    });
-  });
-}
-
-fon.addEventListener('click', function () {
+function closeAll() {
   headerCatalog.classList.remove('active');
   fon.classList.remove('active');
   document.querySelectorAll('.modal').forEach(el => {
@@ -49,6 +23,42 @@ fon.addEventListener('click', function () {
   btns.forEach((btn) => {
     btn.classList.remove('active');
   });
+  body.classList.remove('blocked');
+  html.classList.remove('blocked');
+}
+
+btnOpenModalThanks.forEach(el => {
+  el.addEventListener('click', (e) => {
+    e.preventDefault()
+    modalThanks.classList.add('active')
+    fon.classList.add('active')
+  })
+})
+
+btnCloseModal.forEach(el => el.addEventListener('click', () => {
+  closeAll()
+
+  const modals = document.querySelectorAll('.modal');
+  modals.forEach(modal => {
+    modal.classList.remove('active');
+  })
+}))
+
+function headerCatalogInit() {
+  btns.forEach((btn) => {
+    btn.addEventListener('click', function () {
+      body.classList.toggle('blocked');
+      html.classList.toggle('blocked');
+      headerCatalog.classList.toggle('active');
+      fon.classList.toggle('active');
+      this.classList.toggle('active');
+      mobileNav.classList.toggle('active');
+    });
+  });
+}
+
+fon.addEventListener('click', function () {
+  closeAll()
 });
 
 function accordion(){
@@ -88,6 +98,8 @@ function goUp(){
 function modals(){
   btnFormPopup.forEach((btn) => {
     btn.addEventListener('click', function () {
+      closeAll()
+
       fon.classList.add('active')
       fon.classList.add('all')
       formPopup.classList.add('active');
@@ -192,6 +204,7 @@ function search(){
 
   searchBtns.forEach(btn => {
     btn.addEventListener('click', function () {
+      closeAll()
       fon.classList.add('active')
       searchBox.classList.add('active');
     })
@@ -199,6 +212,7 @@ function search(){
 
   closeSearch.forEach((btn) => {
     btn.addEventListener('click', function () {
+      closeAll()
       fon.classList.remove('active')
       searchBox.classList.remove('active');
     })
